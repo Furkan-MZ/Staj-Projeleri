@@ -1,0 +1,927 @@
+  .video-container {
+    position: fixed;
+    left: 25rem;
+    top: 10em;
+    z-index: 10000;
+  
+  }
+
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+  }
+
+  .close-button:hover {
+    background-color: darkred;
+  }
+
+
+
+
+
+
+
+.navbar-custom {
+    background-color: transparent;
+    padding: 0;
+    position: relative;
+    z-index: 1030;
+    transition: color 0.4s ease;
+
+}
+
+
+
+
+
+
+/* YENİ ANİMASYON: Kırmızı arka planı oluşturacak olan pseudo-element */
+.navbar-custom::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #da1e1d;
+    z-index: -1;
+    /* Animasyonun soldan başlamasını sağlar */
+    transform-origin: left;
+    /* Başlangıçta yatayda ölçeği 0 (görünmez) */
+    transform: scaleX(0);
+    /* Yumuşak geçiş efekti */
+    transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+/* Scroll olunca .scrolled sınıfı eklendiğinde animasyonu tetikle */
+.navbar-custom.scrolled::before {
+    /* Kırmızı arka planı soldan sağa doğru genişlet */
+    transform: scaleX(1);
+}
+
+/* Navbar'ın sol tarafındaki sabit kırmızı logo alanı */
+.navbar-brand-wrapper {
+    background-color: #da1e1d;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+}
+
+/* Navbar menü linkleri */
+.navbar-custom .navbar-nav .nav-link {
+    color: #ffffff;
+    font-weight: 500;
+    padding: 1.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover,
+.navbar-custom .navbar-nav .nav-link.active {
+    color: #f0f0f0; /* Hafif soluk beyaz */
+}
+
+/* İLETİŞİM BUTONU (İsteğinize göre güncellendi) */
+.btn-contact {
+    color: #333; /* Yazı rengi siyah/koyu gri */
+    background-color: #ffffff; /* Arka plan beyaz */
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    padding: 8px 20px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Butonun üzerine gelince (hover) */
+.btn-contact:hover {
+    color: #ffffff; /* Yazı beyaz */
+    background-color: #404040; /* Arka plan koyu gri */
+    border-color: #404040;
+}
+
+/* Scroll sonrası butonun görünümü */
+.navbar-custom.scrolled .btn-contact {
+    color: #da1e1d; /* Yazı kırmızı */
+    background-color: #ffffff; /* Arka plan beyaz */
+}
+
+/* Scroll sonrası butonun üzerine gelince (hover) */
+.navbar-custom.scrolled .btn-contact:hover {
+    color: #ffffff; /* Yazı beyaz */
+    background-color: #404040; /* Arka plan koyu gri */
+}
+
+
+
+/* HERO CAROUSEL (SLIDER) STİLLERİ */
+#hero-carousel .carousel-item {
+    height: 100vh;
+    background: url('https://www.batekeng.com/uploads/slider/slider-1-119.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+#hero-carousel .carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption-custom {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: left;
+    width: 50%;
+}
+
+.carousel-caption-custom h1 { font-size: 3.5rem; font-weight: bold; }
+.carousel-caption-custom p { font-size: 1.2rem; margin: 1rem 0 2rem 0; }
+
+.btn-hero {
+    background-color: #da1e1d;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0;
+    transition: background-color 0.3s ease;
+}
+.btn-hero:hover { background-color: #b01716; color: white; }
+
+
+.hero-section {
+    position: relative; /* İçindeki header'ı konumlandırmak için */
+    height: 100vh; /* Carousel yüksekliği ile aynı */
+}
+
+/* MEVCUT HEADER KURALINI GÜNCELLEYİN (veya header için kural yoksa ekleyin) */
+header {
+    position: absolute; /* Artık hero-section'a göre konumlanacak */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20; /* Diğer elemanların üzerinde kalması için */
+}
+
+
+
+.carousel-indicators div {
+    background-color: black; /* Arka plan rengi */
+    border-radius: 50%; /* Yuvarlak hale getirmek için */
+    width: 50px; /* Genişlik */
+    height: 50px; /*  Yükseklik */
+    transition: all 0.3s; /* Geçiş efekti */
+ 
+}
+
+.carousel-indicators .active {
+background-color: white;
+
+
+}
+
+
+
+
+
+
+  .kapla{
+            display: none;
+        }
+        @media (min-width:601px) and (max-width:999px){
+
+            body{
+                     height:  100vh;
+                     width:  100vh;
+                      overflow: hidden;
+                      background-color: red;
+                      display: flex;
+                      
+
+            }
+
+.gizli{
+
+
+position:relative;
+top: 0;
+left:40px;
+color: white;
+}
+
+            .kapat{
+
+
+                display: none;
+            }
+    
+             .kapla{
+    display:block ;
+         background-color: red;
+    width: 100vh;
+    height: 100vh;
+    margin: 0;
+
+             }
+            
+
+
+            
+        }
+
+        .phone{
+    z-index: 5;
+    transform: rotate(-90deg);
+    position: relative;
+    left: 18rem;
+    top: 13rem;
+
+        }
+
+        .show-on-mobile{
+            display: none;
+        }
+        @media (max-width:600px){
+
+    .show-on-mobile{
+        display: block;
+    }
+
+
+        }
+@keyframes phoneturn{
+
+
+  
+
+    to{
+    transform: rotate(20deg);
+
+
+    }
+
+ 
+}       
+
+.phone{
+
+transition: all 1s;
+animation: phoneturn 1s linear infinite alternate;
+
+}
+
+
+
+
+
+
+
+.video-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height:220px;
+    background-color: #da1e1d; 
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    position: relative; 
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+
+   
+}
+
+.video-trigger:hover {
+    transform: scale(1.05); 
+}
+
+.video-trigger .trigger-text {
+    text-align: center;
+}
+
+.video-trigger .trigger-text strong {
+    font-size: 1.8rem;
+    display: block;
+}
+
+
+.video-trigger .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: background-color 0.3s ease;
+}
+
+.video-trigger:hover .play-icon {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.video-trigger .play-icon::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 20px solid white;
+}
+
+.modal-content {
+    background: transparent !important;
+    border: none !important;
+}
+
+
+
+
+
+.catalog {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 3%;
+    padding: 20px;
+    background-color: #da1e1d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-right: 10px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.getİnfo {
+    margin-left: 10px;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 3%;
+    padding: 10px;
+    color: white;
+    background-color: #404040;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.catalog:hover{
+
+background-color: tomato;
+
+}
+
+.getİnfo:hover{
+
+
+   background-color: black;
+}
+
+
+#aboutButton {
+    background-color: #bebebe;
+    color: black;
+    transition: all 0.3s linear;
+}
+
+#aboutButton:hover {
+    background-color: #da1e1d;
+    color: white;
+}
+
+
+
+
+.eventH{
+
+    position: relative;
+    left: 60px;
+
+}
+
+
+
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 350px;
+}
+
+.whitebox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 90px;
+    padding: 5px;
+    padding-left: 10px;
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 7%;
+    margin: 5px;
+}
+
+.swiper-pagination-bullet {
+    width: 25px   !important;
+    height: 25px   !important;
+    background-color: gray; /* Varsayılan arka plan rengi */
+    transition: background-color 0.3s; /* Geçiş efekti ekleyin */
+}
+
+.swiper-pagination-bullet-active {
+    background-color: white !important;
+    height: 40px; /* Aktif bullet boyutu */
+    width: 40px;
+}
+
+@media (min-width: 1000px) {
+   
+    .swiper-pagination-bullet{
+        position: relative;
+        right: 250px;
+        bottom: 50px;
+        
+    }
+
+
+}
+
+@media (max-width: 600px) {
+    .swiper {
+        width: 100%; /* Responsive olmasını sağlamak */
+        height: auto; /* Yüksekliği otomatik ayarla */
+        padding-left: 50px;
+    }
+
+    .whitebox {
+        width: 100%; /* Genişliği %100 yap */
+      margin: 5px; /* Yalnızca dikey margin */
+      width: 70px;
+
+    }
+
+    .eventH{
+
+        font-size: 55px;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.events {
+    background-color: #da1e1d;
+    border-bottom-left-radius: 2%;
+    border-top-left-radius: 2%;
+
+
+}
+
+.bulletin {
+    border-bottom-right-radius: 2%;
+    border-top-right-radius: 2%;
+    background-color: #e5e5e5;
+}
+
+ /* --- ANA KAPSAYICI --- */
+
+
+
+#AllBulletin {
+    transition: all 0.3s linear;
+    background-color: #bebebe;
+}
+
+#AllBulletin:hover {
+    background-color: red;
+}
+
+#footerButton {
+    color: white;
+    transition: 0.3s all linear;
+    background-color: black;
+}
+
+#footerButton:hover {
+    background-color: red;
+}
+
+.show-on-mobile {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .show-on-mobile {
+        display: block;
+    }
+
+    .navigasyon-barı {
+        background-color: gray;
+        color: gray;
+        border: 2px solid black;
+    }
+
+
+
+
+    .all-events{
+   margin: 15px;
+   background-color: #b01716;
+   color: white;
+   width: 150px;
+   height: 50px;
+
+    }
+
+
+
+.mobile-links{
+font-weight: bold;
+font-size: 30px;
+color: red;
+text-decoration: none;
+
+
+}
+
+.offcanvas{
+ position: absolute;
+  left: 80px;
+  bottom: 5rem;
+    width: 300px;
+    height: 390px;
+    z-index: 1050;
+}
+
+.btn-close{
+
+    color: red;
+}
+
+.empty{
+
+background-image: url("https://www.batekeng.com/img/logobig.png");
+
+
+}
+
+
+.social-links{
+
+margin: 15px;
+
+}
+
+.social-link{
+    
+width: 30px;
+height: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: red;
+border-radius: 50%;
+text-decoration: none;
+
+}
+
+.f-colors{
+
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+    .column-on-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+
+
+   .navbar-custom {
+        /* Mobilde animasyona gerek yok, her zaman kırmızı olsun */
+        background-color: #da1e1d;
+       
+
+    }
+
+    .navbar-custom::before {
+        /* Mobilde animasyon katmanını devre dışı bırak */
+        display: none;
+    }
+
+.video-trigger{
+    margin-top: 12px;
+    margin-bottom: 17px;
+    left:2.5rem;
+}
+
+.kutucuklar{
+    display: flex;
+  
+}
+
+
+.dropdown-toggle::after{
+display: none;
+
+}
+
+.dropdown-menu{
+
+    z-index: 0;
+}
+
+.accordion{
+    border: none;
+}
+
+.accordion-button::after{
+    display: none;
+}
+
+
+.accordion-button:focus{
+    border: none;
+    background-color: white;
+    color: #da1e1d;
+    box-shadow: none;
+}
+
+
+.productsN{
+
+position: relative;
+left: 7.5rem;
+
+}
+
+.accordion-button{
+
+    color:red;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.drop-link{
+
+    color: black;
+    text-decoration: none;
+
+}
+
+.drop-link:hover{
+
+    color: red;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.show-above-lg {
+    display: none; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1000px) {
+    .show-above-lg {
+        display: block;
+    }
+
+    .hide-above-lg {
+        display: none;
+    }
+
+    
+.navbar-nav .nav-link:hover {
+    background-color: white;
+}
+
+.navbar-nav {
+    position: relative;
+    right: 12rem;
+    border-bottom: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Düzeltilmiş */
+
+
+
+}
+
+
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0; /* Bootstrap'in varsayılan boşluğunu sıfırla */
+
+}
+
+
+
+
+
+
+
+.drop-lg{
+background-image: url("https://www.batekeng.com/img/logobig.png");
+background-repeat: no-repeat;
+background-position: center;
+width: 800px;
+height: 150px;
+transform: translateX(-50%);
+}
+
+.drop-lg .row .col{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: auto;
+}
+
+
+.drop-link{
+text-decoration: none;
+color: black;
+transition: all 0.2s linear;
+position: relative;
+left: 30px;
+top: 33px;
+}
+
+
+
+
+
+
+
+
+.drop-link:hover{
+
+color: red;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.carousel-indicators{
+position: absolute;
+bottom: 300px; /* Yüksekliğini ayarlayın */
+
+
+left: 50%; /* Ortalamak için */
+transform: translateX(-350%) rotate(90deg); /* Ortalamak için */
+}
+
+.nokta-1{
+
+    width: 50px;
+    height: 50px;
+
+}
+
+
+    .video-trigger{
+
+     left: 20rem;   
+     bottom: 10rem;
+
+
+    }
+
+    .kutucuklar{
+        display: flex;
+        position: relative;
+      
+      
+    
+    }
+
+    .catalog{
+        position: relative;
+        left: 13rem;
+    }
+
+    .getinfo{
+ position: relative;
+       
+    }
+
+
+
+
+.all-events{
+z-index: 5;
+position: absolute;
+top: 270px;
+left: 530px;
+background-color:#b01716;
+color: white;
+width: 120px;
+transition: all 0.2s linear;
+
+}
+
+.all-events:hover{
+  color: black;
+    background-color: white;
+
+
+}
+
+}
+
+
+
+
+
+

@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batek Mühendislik</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CSS dosyanızın yolu -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+         <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+
+
+<div class="kapla">
+       <div class="gizli" style="font-weight: bold; font-size: 40px;" >Please Turn Your Phone Upright </div>
+  
+        <img src="https://www.batekeng.com/img/mobile_phone.png" class="phone " alt="">
+
+</div>
+
+
+<div class="video-container">
+  <iframe width="1200" height="700" src="https://www.youtube.com/embed/5OmLVZwV72E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <button class="close-button" onclick="this.parentElement.style.display='none'">✖</button>
+</div>
+
+
+
+<div class="kapat">   
+
+    
+
+    <!-- HEADER VE NAVBAR ALANI -->
+     <div class="hero-section"> 
+    <header >
+        <nav class="navbar navbar-custom navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <!-- Logo kısmı: Kırmızı arka planı ve animasyonun başlangıç noktasını oluşturur -->
+                <div class="navbar-brand-wrapper">
+                    <a class="navbar-brand" href="#">
+                    
+                        <img src="https://www.batekeng.com/img/logo.png"  alt="Batek Logo">
+                    </a>
+                </div>
+
+
+                
+                <!-- Mobil Menü Butonu -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto align-items-center">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">Corporate</a>
+                        
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <div class="dropdown-menu  drop-lg" aria-labelledby="navbarDropdown">
+                              
+                              <div class="row">
+                                <div class="col-4 border-end border-dark d-flex justify-content-center align-items-center"> <a class="drop-link" href="#">Automatic Assembly Line - 3 battery/min (L2)</a></div>
+                                <div class="col-4 border-end border-dark">  <a  class="drop-link" href="#">Automatic Assembly Line - 4.5 Battery/Min (L2)</a></div>
+                                <div class="col-4"> <a class="drop-link"  href="#">Miscellaneous</a></div>
+                              </div>
+
+                               
+                              
+                               
+                            </div>
+                        </div>
+
+                        <a class="nav-link" href="#">News</a>
+                        <!-- Buton için ayrı bir nav-link'e gerek yok, direkt butonu koyabiliriz -->
+                        <button class="btn btn-contact ms-lg-2">Contact</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+
+
+
+    </header>
+
+
+
+
+
+
+<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+    
+  <div class="offcanvas-header">
+ 
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  
+
+  
+
+  <div class="offcanvas-body text-end">
+   
+  <a  class="mobile-links d-block" href="">Home</a>
+    <a class="mobile-links d-block" href="">Corporate</a>
+    <a class="mobile-links d-block" href="">   Contact  </a>
+     
+
+    
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        <p class="productsN"> Products </p> 
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        
+          
+                               <a class="drop-link d-block" href="#">Automatic Assembly Line - 3 battery/min (L2)</a>
+                                <a  class="drop-link d-block" href="#">Automatic Assembly Line - 4.5 Battery/Min (L2)</a>
+                                <a class="drop-link"  href="#">Miscellaneous</a>
+                           
+
+       
+    
+    </div>
+    </div>
+  </div>
+
+</div>
+
+
+     <a  class="mobile-links" href="">News</a>
+
+
+     <div class="social-links d-flex justify-content-evenly">
+
+ <a href="" class="social-link">
+<i class="fa-brands fa-facebook-f f-colors"></i>
+ </a>
+ 
+ 
+ 
+ 
+ 
+ <a href="" class="social-link">
+
+<i class="fa-brands fa-instagram f-colors"></i>
+
+ </a>
+
+ 
+ <a href="" class="social-link">
+
+    <i class="fa-brands fa-twitter f-colors"></i>
+ </a>
+ 
+ 
+ <a href="" class="social-link">  <i class="fa-brands fa-invision f-colors"></i> </a>
+ 
+ 
+ <a href="" class="social-link">
+
+<i class="fa-brands fa-youtube f-colors"></i>
+
+ </a>
+
+     </div>
+
+     <img width="240px" src="https://www.batekeng.com/img/logobig.png" alt="">
+    
+     <div  >
+
+ 
+     </div>
+
+     
+
+  </div>
+</div>
+
+   
+
+
+
+
+
+<div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <div data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active nokta-1"></div>
+        <div data-bs-target="#hero-carousel" data-bs-slide-to="1" class="nokta-1"></div>
+        <div data-bs-target="#hero-carousel" data-bs-slide-to="2" class="nokta-1"></div>
+</div>
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="carousel-caption-custom">
+                <h1>A Reliable Partner<br>Committed To Excellence</h1>
+                <p>Flexible, durable and cost efficient manufacturing solutions.</p>
+                <a href="#" class="btn btn-hero">Envelopers</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="carousel-caption-custom">
+                <h1>Innovative Solutions<br>For Your Needs</h1>
+                <p>Our products meet the highest standards.</p>
+                <a href="#" class="btn btn-hero">Learn More</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="carousel-caption-custom">
+                <h1>Quality You Can Trust<br>Every Time</h1>
+                <p>Experience unmatched performance.</p>
+                <a href="#" class="btn btn-hero">Get Started</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    
+     </div>
+
+
+
+
+     
+
+     <div style="height: 50px;"></div>
+
+
+
+    <main class="content-wrapper">
+       
+           
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+
+<div class="show-on-mobile" style="height: 30px;"></div>
+                    
+
+
+<img style="display: block;-webkit-user-select: none;margin: auto;cursor: zoom-in;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://www.batekeng.com/uploads/GenelResim/home-898.jpg" width="375" height="312">
+
+
+
+<a href="#" class="video-trigger" data-bs-toggle="modal" data-bs-target="#videoModal">
+    <span class="play-icon"></span>
+    <div class="trigger-text">
+        <strong>Introduction</strong>
+        <span>Video 2020</span>
+    </div>
+</a>
+
+
+
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content bg-dark">
+
+      <div class="modal-header border-0">
+        <h5 class="modal-title text-white" id="videoModalLabel">Batek Corporate New Factory</h5>
+   
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+   
+        <div class="ratio ratio-16x9">
+          <iframe id="youtubeVideo" src="https://www.youtube.com/watch?v=5OmLVZwV72E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+                </div>
+
+
+                
+
+                <div class="col-lg-6 col-sm-12">
+                    <h4>Line of Business</h4>
+                   
+                    <ul style="line-height: 30px;">
+                        <li>Complete battery assembly line solutions</li>
+                        <li>Automation systems for battery assembly lines</li>
+                        <li> Robotic applications for battery plants</li>
+                        <li>Design and supply of tools for battery manufacturing</li>
+                    </ul>
+
+                    <button class="btn m-4 " id="aboutButton">About</button>
+                            
+
+                    <aside class=" kutucuklar  " > 
+                    
+
+ <div class="getİnfo"> <img  src="https://www.batekeng.com/img/info.png">
+   <h4>Get Info</h4> 
+</div>
+
+                        <div class="catalog " >
+<img  src="https://www.batekeng.com/img/catalog.png"  >     
+  <h4>Catalog</h4>  
+ </div>
+
+
+
+                    </aside>
+         
+
+        </div>
+
+<!--Rowun ve Containerın bitişi-->
+            </div>
+        </div>
+
+
+  
+
+
+
+    <div style="height: 60px;"></div>
+
+
+<section>
+
+
+
+
+
+    <div class="container">
+
+
+
+        <div class="row">
+
+            <div class="col-lg-7 col-sm-12 events p-4 ">
+            
+                
+
+              <h4 class="eventH" style="color: white; font-weight: bold;">Events</h4>
+ 
+           
+
+              <div style="height: 30px;"></div>
+
+
+
+
+
+
+
+              <div class="show-on-mobile"> 
+
+                
+<div class="swiper  ">
+
+  <div class="swiper-wrapper">
+  
+
+    <div class="swiper-slide">
+        
+
+
+  <div class="container d-flex">
+                        <div class="whitebox">08 June 2021</div>
+                        <div class="whitebox">11 June 2021</div>
+                    
+                    <div style="height: 20px;"></div>
+                  
+                </div>
+                 <div style="height: 40px;"></div>
+  <p style="color: white; font-weight: 500;" class="text-start">11th International Conference on Lead-Acid Batteries</p>
+
+
+    </div>
+
+
+
+    <div class="swiper-slide">
+
+<div class="container d-flex">
+                        <div class="whitebox">04 March 2020</div>
+                        <div class="whitebox">06 March 2020</div>
+                        <p class="pt-5 text-light" style="font-weight: bold;">Moscow, Russia</p>
+                   
+                    </div>
+                     <div style="height: 40px;"></div>
+<p style="color: white; font-weight: 500;" class="text-start">29th International Specialized Exhibit Independable Power Sources</p>
+
+    </div>
+
+
+
+    <div class="swiper-slide">
+        
+<div class="container d-flex">
+                        <div class="whitebox">29 March 2020</div>
+                        <div class="whitebox">31 March 2020</div>
+                        <p class="pt-5 text-light" style="font-weight: bold;">Zibo, Shandong, China</p>
+                    </div>
+
+
+ <div style="height: 40px;"></div>
+ <p style="color: white; font-weight: 500;" class="ps-2">The 13th International Lead Battery Conference on World Lead Battery Technologies</p>
+
+    </div>
+
+
+
+    
+     <div class="swiper-slide"> 
+        
+
+        <div class="container d-flex">
+                        <div class="whitebox">19 March 2025</div>
+                        <div class="whitebox">21 March 2024</div>
+                        <p class="pt-5 text-light" style="font-weight: bold;">Golden Sands, Bulgaria</p>
+                    </div>
+        
+        
+        <div style="height: 40px;"></div>
+    <p style="color: white; font-weight: 500;" class="text-start">The 11th International Conference on Lead-Acid Batteries</p>
+    
+    
+    </div>
+
+      <div class="swiper-slide"> 
+        
+         <div class="container d-flex">
+                        <div class="whitebox">19 March 2025</div>
+                        <div class="whitebox">21 March 2024</div>
+                        <p class="pt-5 text-light" style="font-weight: bold;">Milan, Italy</p>
+                    </div>
+        
+        <div style="height: 40px;"></div>
+    
+     <p style="color: white; font-weight: 500;" class="text-start">17th European Lead Battery Conference and Exhibition</p>
+    
+    </div>
+       <div class="swiper-slide"> 
+        
+         <div class="container d-flex">
+                        <div class="whitebox">19 March 2025</div>
+                        <div class="whitebox">21 March 2024</div>
+                        <p class="pt-5 text-light" style="font-weight: bold;">Moscow, Russia</p>
+                    </div>
+        
+        
+        <div style="height: 40px;"></div>
+    
+  <p style="color: white; font-weight: 500;" class="text-start">The 28th International Specialized Exhibition</p>
+    
+    </div>
+
+        <div class="swiper-slide">
+             <div class="container d-flex">
+                        <div class="whitebox">19 March 2025</div>
+                        <div class="whitebox">21 March 2024</div>
+                        <p class="pt-5 text-light" style="font-weight: bold;">Vienna, Austria</p>
+                    </div>
+            
+            <div style="height: 40px;"></div>
+        
+          <p style="color: white; font-weight: 500;" class="text-start">16th European Lead Battery Conference & Exhibition</p>
+        
+        </div>
+
+<div class="swiper-slide">
+
+
+<div class="container d-flex">
+                        <div class="whitebox">19 March 2025</div>
+                        <div class="whitebox">21 March 2024</div>
+                    </div>
+                    <div style="height: 40px;"></div>
+                    <p style="color: white; font-weight: 500;" class="text-start">11th International Conference on Lead-Acid Batteries</p>
+
+</div>
+    </div>
+
+
+
+
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+ 
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+
+
+<button class="btn all-events  ">All Events</button>
+
+</div>
+
+
+
+
+
+<div class="hide-on-mobile"> 
+<div class="swiper ">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="row">
+                <div class="col-6">
+                    <div class="container d-flex">
+                        <div class="whitebox">08 June 2021</div>
+                        <div class="whitebox">11 June 2021</div>
+                    </div>
+                    <div style="height: 20px;"></div>
+                    <p style="color: white; font-weight: 500;" class="text-start">11th International Conference on Lead-Acid Batteries</p>
+                </div>
+                <div class="col-6 border-start border-dark">
+                    <div class="container d-flex">
+                        <div class="whitebox">04 March 2020</div>
+                        <div class="whitebox">06 March 2020</div>
+                        <p class="pt-5 text-light" style="font-weight: bold;">Moscow, Russia</p>
+                    </div>
+                    <div style="height: 20px;"></div>
+                    <p style="color: white; font-weight: 500;" class="text-start">29th International Specialized Exhibit Independable Power Sources</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide"> 
+            <div class="row">
+                <div class="col-6">
+                    <div class="container d-flex">
+                        <div class="whitebox">29 March 2020</div>
+                        <div class="whitebox">31 March 2020</div>
+                        <p class="pt-5 text-light" style="font-weight: bold;">Zibo, Shandong, China</p>
+                    </div>
+                    <div style="height: 20px;"></div>
+                    <p style="color: white; font-weight: 500;" class="ps-2">The 13th International Lead Battery Conference on World Lead Battery Technologies</p>
+                </div>
+                <div class="col-6 border-start border-dark">
+                    <div class="container d-flex">
+                        <div class="whitebox">19 March 2025</div>
+                        <div class="whitebox">21 March 2024</div>
+                        <p class="pt-5 text-light" style="font-weight: bold;">Golden Sands, Bulgaria</p>
+                    </div>
+                    <div style="height: 20px;"></div>
+                    <p style="color: white; font-weight: 500;" class="text-start">The 11th International Conference on Lead-Acid Batteries</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="row">
+                <div class="col-6">
+                    <div class="container d-flex">
+                        <div class="whitebox">19 March 2025</div>
+                        <div class="whitebox">21 March 2024</div>
+                        <p class="pt-5 text-light" style="font-weight: bold;">Milan, Italy</p>
+                    </div>
+                    <div style="height: 20px;"></div>
+                    <p style="color: white; font-weight: 500;" class="text-start">17th European Lead Battery Conference and Exhibition</p>
+                </div>
+                <div class="col-6 border-start border-dark">
+                    <div class="container d-flex">
+                        <div class="whitebox">19 March 2025</div>
+                        <div class="whitebox">21 March 2024</div>
+                        <p class="pt-5 text-light" style="font-weight: bold;">Moscow, Russia</p>
+                    </div>
+                    <div style="height: 20px;"></div>
+                    <p style="color: white; font-weight: 500;" class="text-start">The 28th International Specialized Exhibition</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="row">
+                <div class="col-6">
+                    <div class="container d-flex">
+                        <div class="whitebox">19 March 2025</div>
+                        <div class="whitebox">21 March 2024</div>
+                        <p class="pt-5 text-light" style="font-weight: bold;">Vienna, Austria</p>
+                    </div>
+                    <div style="height: 20px;"></div>
+                    <p style="color: white; font-weight: 500;" class="text-start">16th European Lead Battery Conference & Exhibition</p>
+                </div>
+                <div class="col-6 border-start border-dark">
+                    <div class="container d-flex">
+                        <div class="whitebox">19 March 2025</div>
+                        <div class="whitebox">21 March 2024</div>
+                    </div>
+                    <div style="height: 20px;"></div>
+                    <p style="color: white; font-weight: 500;" class="text-start">11th International Conference on Lead-Acid Batteries</p>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+
+
+    
+<button type="button " class= " btn all-events">All Events</button>
+
+    <div class="swiper-pagination "></div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+            <div class="col-lg-5 col-sm-12  text-start bulletin p-4"  > 
+                  <h4>Bulletin</h4>
+            
+                 <a href="" style="color: #da1e1d; text-decoration: none;">06.07.2018</a>
+                      <p>Power Moulds have delivered another breathtaking performance. Our client witnessed how a perfect COS welding can reliably be achieved with much lesser strap thickness.</p>
+
+                     <br><br><br>
+
+                     <a href="" style="color: #da1e1d; text-decoration: none;">24.07.2018</a>
+                         <p>Batek completes another cutting edge assembly line. The automatic assembly line is a comprehensive supply comprising steps from enveloping to battery palletizing.</p>
+                    
+                         <button class="btn" id="AllBulletin">All Bulletin</button>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+</section>
+
+
+    </main>
+
+
+
+
+
+
+
+
+   
+ <div style="height: 70px;"></div>
+
+
+
+
+    <footer class="container">
+
+
+        <div class="row">
+            
+            <div class="col-lg-4 col-sm-12 d-flex flex-column justify-content-center align-items-center">
+
+
+<img class="logo" src="https://www.batekeng.com/img/footerlogo.png" alt="Batek">
+
+            </div>
+
+        <div class="col-lg-4 col-sm-12 text-start"><h4>Products</h4>
+          <p class="text-center">   
+        Automatic Assembly Line - Capacity:3 battery /min. (L2)Automatic Assembly Line - Capacity:4,5 Battery /Min. (L2)
+        </p> 
+
+         <p class="text-start">Miscellaneous</p>
+        </div>
+        <div class="col-lg-4 col-sm-12 text-start"><h4>Batek Makina San. ve Tic. A.Ş.</h4>
+        
+            <p>Çerkeşli OSB Mah, İmes 3 Bulvarı, No:28 41455 Dilovası-Kocaeli</p>
+        <br>
+            <p>Phone: <a href="" style="text-decoration: none;color: black;"> + 90 262 502 37 37 pbx</a></p>
+            <br>
+            <p>Fax: + 90 262 502 41 03</p>
+            <br>
+            <p>Email <a href="" style="text-decoration: none;color: black;"> info@batekeng.com</a></p>
+            <button class="btn " id="footerButton">Contact Form</button>
+        
+        
+        </div>
+    
+    
+    
+    </div>
+        
+        <div style="height: 20px;"></div>
+   
+        <div class="row">
+
+            <div class="col-lg-7 col-sm-12">Copyright © 2018 BATEK, Battery Manufacturing Machines - All rights reserved.</div>
+<div class=" show-on-mobile" style="height: 30px;"></div>
+            <div class="col-lg-4 col-sm-12 d-flex justify-content-center offset-lg-1 column-on-mobile ">
+               
+                Web Tasarım 
+                 <img  src="https://www.batekeng.com/img/pantone.png" alt=""></div>
+        </div>
+
+
+
+
+
+
+
+
+    </footer>
+
+
+
+</div>
+
+
+
+
+        <!-- Diğer section ve footer alanlarınız buraya gelecek... -->
+ 
+<script src="https://kit.fontawesome.com/48171c962e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- NAVBAR ANİMASYONU İÇİN GEREKLİ JAVASCRIPT -->
+    <script>
+       document.addEventListener('DOMContentLoaded', function () {
+    const navbar = document.querySelector('.navbar-custom');
+
+    window.addEventListener('scroll', function () {
+        // Carousel alanını geçerken animasyon çalışır.
+        // Carousel geçilince navbar da yukarı kaybolur.
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+});
+
+
+
+const videoModal = document.getElementById('videoModal');
+const youtubeVideo = document.getElementById('youtubeVideo');
+const originalVideoSrc = youtubeVideo.src;
+
+
+videoModal.addEventListener('hidden.bs.modal', function () {
+
+    youtubeVideo.src = '';
+});
+
+
+videoModal.addEventListener('show.bs.modal', function () {
+
+    youtubeVideo.src = originalVideoSrc;});
+
+
+
+
+
+    const swiper = new Swiper('.swiper', {
+        direction: 'horizontal',
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+  
+
+    </script>
+</body>
+</html>
